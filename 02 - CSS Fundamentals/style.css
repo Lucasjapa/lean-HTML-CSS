@@ -36,12 +36,12 @@ li {
     font-size: 20px;
 }
 
-#author {
+.author {
     font-style: italic;
     font-size: 18px;
 }
 
-#copyright {
+.copyright {
     font-size: 16px;
 }
 
@@ -63,3 +63,22 @@ aside{
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
 }
+
+/*====== Pseudo-classes ======*/
+
+/*
+li:first-child{
+    font-weight: bold;
+}
+
+li:last-child{
+    font-style: italic;
+}
+
+li:nth-child(even){
+    color: red;
+}
+
+article header p:first-child{
+    color: red;
+}*/
