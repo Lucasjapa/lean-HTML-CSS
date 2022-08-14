@@ -54,31 +54,54 @@ li {
     list-style: none;
 }
 
-.main-header{
+.main-header {
     background-color: #f7f7f7;
 }
 
-aside{
+aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
 }
 
-/*====== Pseudo-classes ======*/
-
-/*
-li:first-child{
+li:first-child {
     font-weight: bold;
 }
 
-li:last-child{
+li:last-child {
     font-style: italic;
 }
 
+/*====== Styling links ======*/
+a:link {
+    color: #1098ad;
+    text-decoration: none;
+}
+
+a:visited {
+    /*color: #777;*/
+    color: #1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+/*====== Pseudo-classes ======*/
+
+/*
 li:nth-child(even){
     color: red;
 }
 
-article header p:first-child{
+Misconception: this won't work!
+article p:first-child{
     color: red;
 }*/
