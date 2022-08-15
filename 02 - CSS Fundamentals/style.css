@@ -105,3 +105,21 @@ Misconception: this won't work!
 article p:first-child{
     color: red;
 }*/
+
+/* Resolving conflicts */
+/*
+#copyright {
+    color: red;
+}
+
+.copyright {
+    color: blue;
+}
+
+.text {
+    color: yellow;
+}
+
+footer p {
+    color: green;
+}*/
