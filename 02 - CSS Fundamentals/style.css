@@ -15,8 +15,8 @@ body {
 .container {
     width: 700px;
     border-top: 10px solid #1098ad;
-   /* margin-left: auto;
-    margin-right: auto;*/
+    /* margin-left: auto;
+     margin-right: auto;*/
     margin: 0 auto;
     /*position: relative;*/
 }
@@ -68,6 +68,7 @@ h1 {
 h2 {
     font-size: 40px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 h3 {
@@ -158,22 +159,22 @@ a:active {
     height: auto;
 }
 
-nav a:link{
-   /* background-color:  orangered;
-    margin: 20px;
-    padding: 20px;
+nav a:link {
+    /* background-color:  orangered;
+     margin: 20px;
+     padding: 20px;
 
-    display: block;*/
+     display: block;*/
     margin-right: 30px;
     margin-top: 15px;
     display: inline-block;
 }
 
-nav a:link:last-child{
+nav a:link:last-child {
     margin-right: 0;
 }
 
-button{
+button {
     font-size: 22px;
     padding: 15px;
     cursor: pointer;
@@ -184,6 +185,29 @@ button{
     bottom: 50px;
     right: 50px;
 }
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+h3 + p::first-line{
+    /*color: red;*/
+}
+
+h2::after{
+    content: "TOP";
+    background-color: #ffe70e;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+}
+
 /*====== Pseudo-classes ======*/
 
 /*
