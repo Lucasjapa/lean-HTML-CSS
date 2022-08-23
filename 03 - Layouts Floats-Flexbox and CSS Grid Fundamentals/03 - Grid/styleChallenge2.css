@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -49,7 +50,6 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     color: #777;
-    margin-bottom: 20px;
 }
 
 .info-product {
@@ -68,8 +68,7 @@ body {
 .color-title {
     font-size: 16px;
     text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .color-list div {
@@ -141,10 +140,32 @@ body {
     cursor: pointer;
     width: 100%;
     padding: 15px 0;
-    margin-top: 10px;
 }
 
 .add-cart:hover {
     color: #000;
     background-color: #fff;
+}
+
+/* ===== LAYOUT: FLEXBOX ===== */
+.price-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* ====== CSS GRID LAYOUT ====== */
+article{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    column-gap: 40px;
+}
+
+.product-title{
+    grid-column: 1 / -1;
+}
+
+button{
+    grid-column: 1 / -1;
 }
