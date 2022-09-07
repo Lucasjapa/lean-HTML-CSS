@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>App Layout</title>
+		<style>
+			/*
+			SPACING SYSTEM (px)
+			2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+			FONT SIZE SYSTEM (px)
+			10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+			/*
+			MAIN COLOR: #087f5b
+			GREY COLOR: #343a40
+			*/
+			
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			body {
+				font-family: sans-serif;
+				color: #343a40;
+				font-size: 24px;
+				height: 100vh;
+				text-align: center;
+				font-weight: bold;
+				
+				display: grid;
+				grid-template-columns: 80px  400px 1fr 250px;
+				grid-template-rows: 80px 1fr;
+			}
+			
+			nav,
+			menu,
+			section,
+			main,
+			aside {
+				padding-top: 24px;
+			}
+			
+			nav {
+				background-color: #343a40;
+				color: #fff;
+				grid-row: 1 / -1;
+			}
+			
+			menu {
+				background-color: #7048e8;
+				color: #fff;
+				grid-column: 2 / -1;
+				
+				display: flex;
+				align-items: center;
+			}
+			
+			section {
+				background-color: #e9ecef;
+			}
+			
+			aside {
+				background-color: #e9ecef;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>Nav</nav>
+		<menu>Menu
+			<a href="#">New</a>
+			<a href="#">Reply</a>
+			<a href="#">Forward</a>
+			<a href="#">Mark unread</a>
+		</menu>
+		<section>Inbox</section>
+		<main>Email view</main>
+		<aside>Additional info</aside>
+	</body>
+</html>
