@@ -6,15 +6,29 @@ console.log(myName);
 console.log(h1);
 
 
-/*h1.addEventListener("click", () => {
+/*
+h1.addEventListener("click", () => {
     h1.textContent = myName;
     h1.style.backgroundColor = "blue";
     h1.style.padding = "5rem";
-})*/
+})
+*/
 
+///////////////////////////////////////////////////////////
+// Set current year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+///////////////////////////////////////////////////////////
+// Make mobile navigation work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+    headerEl.classList.toggle("nav-open");
+})
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
